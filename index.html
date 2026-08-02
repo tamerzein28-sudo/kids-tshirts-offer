@@ -15,7 +15,7 @@
       ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e};
       ttq.load=function(e,n){var i="https://analytics.tiktok.com/i18n/pixel/events.js";
       ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=i,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};
-      var o=document.createElement("script");o.type="text/javascript",o.async=!0,o.src=i+"?sdkid="+e+"&lib="+t;
+      var o=document.createElement("script");o.type="text/javascript";o.async=!0;o.src=i+"?sdkid="+e+"&lib="+t;
       var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(o,a)};
 
       ttq.load('D9N4FT3C77U1C011MCV0');
@@ -28,7 +28,7 @@
         body{font-family:'Segoe UI',Tahoma,sans-serif;background:linear-gradient(135deg,#ff9a9e 0%,#fecfef 100%);min-height:100vh;display:flex;justify-content:center;align-items:center;padding:20px}
         .container{max-width:500px;width:100%;background:white;border-radius:24px;overflow:hidden;box-shadow:0 25px 50px -12px rgba(0,0,0,0.25)}
         .badge{background:#ff4757;color:white;padding:8px 20px;border-radius:20px;font-size:14px;font-weight:bold;display:inline-block;margin:20px 20px 0}
-        .product-img{width:100%;height:300px;background:#f0f0f0;display:flex;align-items:center;justify-content:center;font-size:60px}
+        .product-img{width:100%;height:auto;display:block}
         .content{padding:25px}
         .title{font-size:24px;font-weight:800;color:#2d3436;margin-bottom:10px;line-height:1.4}
         .subtitle{color:#636e72;font-size:15px;margin-bottom:20px}
@@ -52,10 +52,10 @@
     <div class="container">
         <span class="badge">🔥 عرض محدود جداً</span>
 
-        <div class="product-img">👕</div>
+        <img src="product.jpg" alt="تشكيلة بلايز أطفال" class="product-img">
 
         <div class="content">
-            <h1 class="title">تشكيلة بلايز كتير كبيرة وفقط 10 شيكل والـ 6 بلايز بـ 50 شيكل</h1>
+            <h1 class="title">👕 تشكيلة بلايز كتير كبيرة وفقط 10 شيكل والـ 6 بلايز بـ 50 شيكل</h1>
             <p class="subtitle">تصاميم بتجنن للأطفال ولادي وبناتي - ألوان زاهية - خامات ناعمة - مقاسات من 9 شهور لغاية 6 سنين</p>
 
             <ul class="features">
@@ -72,7 +72,7 @@
                 <p class="urgency">⏰ العرض ساري لفترة محدودة جداً - الكمية محدودة!</p>
             </div>
 
-            <a href="https://wa.me/972593992186?text=مرحبا، بدي أعرف عن عرض بلايز الأطفال" 
+            <a href="https://wa.me/972592492115?text=مرحبا، شفت الإعلان بدي أعرف عن عرض البلايز" 
                class="whatsapp-btn" 
                onclick="ttq.track('Contact',{content_name:'Kids T-Shirts Offer',value:10,currency:'ILS'})">
                 💬 أطلب الآن عبر واتساب
